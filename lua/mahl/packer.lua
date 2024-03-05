@@ -20,10 +20,17 @@ return require("packer").startup(function(use)
 			{ "L3MON4D3/LuaSnip" },
 			{ "saadparwaiz1/cmp_luasnip" },
 			{ "rafamadriz/friendly-snippets" },
+			{ "hrsh7th/cmp-path" },
 		},
 	})
 	use({ "ellisonleao/gruvbox.nvim" })
 	use({ "stevearc/conform.nvim" })
 	use("echasnovski/mini.comment")
 	use({ "stevearc/dressing.nvim" })
+	use({ "kdheepak/lazygit.nvim", requires = { "nvim-lua/plenary.nvim" } })
+	use({
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
 end)

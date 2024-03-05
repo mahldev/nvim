@@ -7,7 +7,7 @@ local mappings = {
 	{ "v", "p", '"+p' },
 	{ "n", "d", '"+d' },
 	{ "v", "d", '"+d' },
-	{ "n", "<leader>sf", vim.cmd.Ex },
+	{ "n", "<leader>sf", ":Lexplore! %:p:h<CR>" },
 	{ "n", "<leader>gg", vim.cmd.LazyGit },
 }
 

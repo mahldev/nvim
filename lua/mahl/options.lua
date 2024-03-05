@@ -18,3 +18,8 @@ opt.incsearch = true
 opt.termguicolors = true
 opt.scrolloff = 8
 opt.isfname:append("@-@")
+
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 20
+vim.g.netrw_keepdir = 0

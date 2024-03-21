@@ -1,3 +1,13 @@
+local packer_setup_path = vim.fn.stdpath("config") .. "/lua/mahl/packer.lua"
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+	group = vim.api.nvim_create_augroup("Packer", { clear = true }),
+	pattern = packer_setup_path,
+	callback = function()
+		vim.cmd("so | PackerSync")
+	end,
+})
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("highlight_yank", {}),
 	pattern = "*",
@@ -7,9 +17,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "netrw",
-	callback = function()
-		vim.api.nvim_buf_set_keymap(0, "n", "<leader>sf", ":Lexplore!<CR>", { silent = true })
-		vim.api.nvim_buf_set_keymap(0, "n", "h", "-^", { silent = true })
-	end,
+	pattern = { "typescript", "javascript", "typescriptreact", "javascriptreact" },
+	command = "setlocal expandtab shiftwidth=2 softtabstop=2",
 })

@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: missing-fields
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"c",
@@ -9,6 +10,12 @@ require("nvim-treesitter.configs").setup({
 		"java",
 		"angular",
 		"typescript",
+		"http",
+		"json",
+		"go",
+		"gomod",
+		"gowork",
+		"gosum",
 	},
 	sync_install = false,
 	auto_install = true,

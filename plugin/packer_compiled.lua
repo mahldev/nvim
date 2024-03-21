@@ -139,10 +139,25 @@ _G.packer_plugins = {
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.ai"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/mini.ai",
+    url = "https://github.com/echasnovski/mini.ai"
+  },
   ["mini.comment"] = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/mini.comment",
     url = "https://github.com/echasnovski/mini.comment"
+  },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -159,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["obsidian.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
+    url = "https://github.com/epwalsh/obsidian.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -168,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rest.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/rest.nvim",
+    url = "https://github.com/rest-nvim/rest.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

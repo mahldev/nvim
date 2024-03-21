@@ -18,8 +18,9 @@ opt.incsearch = true
 opt.termguicolors = true
 opt.scrolloff = 8
 opt.isfname:append("@-@")
+opt.splitbelow = true
+opt.conceallevel = 2
 
--- netrw
-vim.g.netrw_banner = 0
-vim.g.netrw_winsize = 20
-vim.g.netrw_keepdir = 0
+if not vim.env.SSH_TTY then
+	opt.clipboard = "unnamedplus"
+end

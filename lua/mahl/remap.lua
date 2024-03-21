@@ -1,14 +1,11 @@
 vim.g.mapleader = " "
 
 local mappings = {
-	{ "n", "y", '"+y' },
-	{ "v", "y", '"+y' },
-	{ "n", "p", '"+p' },
-	{ "v", "p", '"+p' },
-	{ "n", "d", '"+d' },
-	{ "v", "d", '"+d' },
-	{ "n", "<leader>sf", ":Lexplore! %:p:h<CR>" },
+	{ "n", "<leader>sf", ":Neotree filesystem toggle  right<CR>" },
 	{ "n", "<leader>gg", vim.cmd.LazyGit },
+	{ "n", "<leader>m", vim.cmd.Mason },
+	{ "n", "<leader>rr", "<Plug>RestNvim" },
+	{ "n", "<leader>fo", vim.cmd.ObsidianSearch },
 }
 
 for _, map in ipairs(mappings) do

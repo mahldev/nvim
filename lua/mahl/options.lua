@@ -20,6 +20,7 @@ opt.scrolloff = 8
 opt.isfname:append("@-@")
 opt.splitbelow = true
 opt.conceallevel = 2
+opt.showmatch = true
 
 if not vim.env.SSH_TTY then
 	opt.clipboard = "unnamedplus"

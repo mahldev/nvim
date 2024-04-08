@@ -8,7 +8,7 @@ harpoon:setup({
 })
 
 set("n", "<leader>a", function()
-	harpoon:list():append()
+	harpoon:list():add()
 end)
 set("n", "<leader>ee", function()
 	harpoon.ui:toggle_quick_menu(harpoon:list())

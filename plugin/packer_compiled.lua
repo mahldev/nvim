@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -149,16 +144,6 @@ _G.packer_plugins = {
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/mini.comment",
     url = "https://github.com/echasnovski/mini.comment"
   },
-  ["neo-tree.nvim"] = {
-    loaded = true,
-    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
-    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["nui.nvim"] = {
-    loaded = true,
-    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -189,15 +174,35 @@ _G.packer_plugins = {
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rest.nvim"] = {
+  ["telescope-file-browser.nvim"] = {
     loaded = true,
-    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/rest.nvim",
-    url = "https://github.com/rest-nvim/rest.nvim"
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mahl/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
+  },
+  ["vim-monotone"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/vim-monotone",
+    url = "https://github.com/Lokaltog/vim-monotone"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/mahl/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 

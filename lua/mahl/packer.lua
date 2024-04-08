@@ -28,7 +28,6 @@ return require("packer").startup(function(use)
 			{ "hrsh7th/cmp-path" },
 		},
 	})
-	use({ "ellisonleao/gruvbox.nvim" })
 	use({ "stevearc/conform.nvim" })
 	use("echasnovski/mini.comment")
 	use({ "stevearc/dressing.nvim" })
@@ -40,19 +39,21 @@ return require("packer").startup(function(use)
 	})
 	use("echasnovski/mini.ai")
 	use({
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"MunifTanjim/nui.nvim",
-		},
-	})
-	use({ "rest-nvim/rest.nvim", requires = { "nvim-lua/plenary.nvim" } })
-	use({
 		"epwalsh/obsidian.nvim",
 		tag = "*",
 		requires = {
 			"nvim-lua/plenary.nvim",
 		},
+	})
+	use({ "Lokaltog/vim-monotone" })
+	use({ "folke/zen-mode.nvim" })
+	use({ "folke/twilight.nvim" })
+	use({
+		"nvim-telescope/telescope-file-browser.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	})
+	use({
+		"nvim-telescope/telescope-fzf-native.nvim",
+		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 	})
 end)
